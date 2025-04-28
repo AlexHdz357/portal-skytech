@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido</title>
+</head>
+<body>
+    <h2 id="welcome-message">Bienvenido al portal de SkyTech</h2>
+</body>
+<script>
+  // Reemplaza dinámicamente el nombre del empleado (opcional)
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get('name');
+  if (name) {
+    document.getElementById('welcome-message').innerText = `¡Hola, ${name}! Bienvenido al portal de SkyTech.`;
+  }
+</script>
+</html>
